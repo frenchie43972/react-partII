@@ -12,7 +12,7 @@ function App() {
     // network requests via the axios.get request from fetchBooks()
     useEffect(() => {
         fetchBooks();
-    }, []);
+    }, [fetchBooks]); 
 
     return (
         <div className="app">
